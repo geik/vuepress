@@ -1,0 +1,71 @@
+[
+  "/",
+  "/anotherreadme.md",
+  {
+    "title": "Chapter1",
+    "path": "/chapter1/",
+    "collapsable": true,
+    "sidebarDepth": 1,
+    "children": [
+      "/chapter1/story.md"
+    ]
+  },
+  {
+    "title": "Chapter2",
+    "path": "/chapter2/",
+    "collapsable": true,
+    "sidebarDepth": 1,
+    "children": [
+      "/chapter2/story.md",
+      {
+        "title": "Chapter With No Readme",
+        "path": "",
+        "collapsable": true,
+        "sidebarDepth": 1,
+        "children": [
+          "/chapter2/chapter with no readme/CHAPTER.md"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Chapter3",
+    "path": "/chapter3/",
+    "collapsable": true,
+    "sidebarDepth": 1,
+    "children": [
+      {
+        "title": "Chapter Another One",
+        "path": "/chapter3/chapter another one/",
+        "collapsable": true,
+        "sidebarDepth": 1,
+        "children": []
+      },
+      {
+        "title": "Chapter With No Readme",
+        "path": "",
+        "collapsable": true,
+        "sidebarDepth": 1,
+        "children": [
+          "/chapter3/chapter with no readme/CHAPTER.md"
+        ]
+      },
+      {
+        "title": "Markdown With Spaces",
+        "path": "",
+        "collapsable": true,
+        "sidebarDepth": 1,
+        "children": [
+          "/chapter3/Markdown with spaces/lessons learned.md"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Images",
+    "path": "/images/",
+    "collapsable": true,
+    "sidebarDepth": 1,
+    "children": []
+  }
+]

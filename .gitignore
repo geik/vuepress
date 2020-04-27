@@ -1,0 +1,7 @@
+.vscode
+.idea
+.vs
+_book
+**/_book
+node_modules
+dist

@@ -1,0 +1,51 @@
+[
+    "/",
+    "/anotherreadme.md",
+    {
+        "title": "Chapter 1",
+        "path": "/chapter1/",
+        "collapsable": true,
+        "sidebarDepth": 5,
+        "children": [
+            "/"
+        ]
+    },
+    {
+        "title": "Chapter 2",
+        "path": "/chapter2/",
+        "collapsable": true,
+        "sidebarDepth": 5,
+        "children": [
+            "/chapter2/chapter with no readme/CHAPTER.md",
+            {
+                "title": "Chapter With No Readme",
+                "path": "/chapter2/chapter with no readme/",
+                "collapsable": true,
+                "sidebarDepth": 5,
+                "children": [
+                    "/chapter2/chapter with no readme/CHAPTER.md"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Special",
+        "path": "/chapter3/",
+        "collapsable": true,
+        "sidebarDepth": 5,
+        "children": [
+            "/chapter2/chapter with no readme/CHAPTER.md",
+            "/chapter3/chapter another one/",
+            "/chapter3/chapter with no readme/CHAPTER.md"
+        ]
+    },
+    {
+        "title": "Chapter 3",
+        "path": "/chapter2/",
+        "collapsable": true,
+        "sidebarDepth": 5,
+        "children": [
+            "/chapter2/chapter with no readme/CHAPTER.md"
+        ]
+    }
+]
