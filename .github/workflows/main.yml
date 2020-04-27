@@ -28,4 +28,5 @@ jobs:
         
     - name: Publish the image
       run: |-
+        echo ${{ secrets.DOCKER_IO_TOKEN }} | docker login --username geik --password-stdin
         docker push geik/vuepress:latest
