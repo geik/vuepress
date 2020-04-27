@@ -61,3 +61,6 @@ Write-Host "Generate Vuepress sidebar to" $sidebarJsonPath
 Set-Content -Path $sidebarJsonPath -Value ( (GetSidebarGroupForDirectory "$docspath" | ConvertTo-Json -Depth 30 ) )
 Write-Host "Copy vuepress directory" $vuepressDirPath "to docs directory" $docspath
 Copy-Item -Path $vuepressDirPath $docspath -Recurse -Force
+
+Write-Host "Build Vuepress site in" $docspath "/.vuepress/dist"
+vuepress build $docspath
