@@ -62,5 +62,5 @@ Set-Content -Path $sidebarJsonPath -Value ( (GetSidebarGroupForDirectory "$docsp
 Write-Host "Copy vuepress directory" $vuepressDirPath "to docs directory" $docspath
 Copy-Item -Path $vuepressDirPath $docspath -Recurse -Force
 
-Write-Host "Build Vuepress site in" $docspath "/.vuepress/dist"
+Write-Host "Build Vuepress site in" $docspath"/.vuepress/dist"
 vuepress build $docspath
