@@ -3,7 +3,7 @@ const sb = require("./sidebar.json");
 module.exports = {
   title: 'VuePress demo',
   description: 'Just playing around',
-  base: "/vuepress",
+  base: "/my-vuepress/",
   plugins: [
     'vuepress-plugin-mermaidjs'
   ],
