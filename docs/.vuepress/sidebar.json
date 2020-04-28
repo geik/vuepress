@@ -66,8 +66,6 @@
     "path": "/images/",
     "collapsable": true,
     "sidebarDepth": 1,
-    "children": [
-      "/images/logo.png"
-    ]
+    "children": []
   }
 ]

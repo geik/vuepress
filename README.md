@@ -1,9 +1,9 @@
 # VuePress
 
 A docker container that builds a Vuepress site.
-Starting point = a `documentation directory` - containing markdown files and subdirectories that also contain markdown files.
+Starting point = a docsdir = your `documentation directory` - containing markdown files and subdirectories that also contain markdown files.
 
-## Local development
+## Build the container
 
 Build it.
 
@@ -11,25 +11,41 @@ Build it.
 docker build --tag vuepress .
 ```
 
-Run it. The documentation directory is mapped as volume to a (non already existing) directory within the container itself.
+## Prepare your documentation
+
+Put a `.vuepress` directory into your docsdir. Containing a vuepres `config.js` file that:
+- for its sidebar - points to a `sidebar.json` file
+- has a `base` parameter that is either `/` or the base url of your deployed & hosted website
+
+## Use the container
+
+The documentation directory is mapped as volume to a (non already existing) directory within the container itself.
 
 ```cmd
 docker run -it -p 8080:8080 -v c:\dev\vuepress\docs:/docs vuepress
 ```
 
-Inside the container, build the vuepress site using the powershell script. In this script the vuepress sidebar is generated automatically from the documentation directory's content. The `vuepress build` command is part of the build script. 
+Build the vuepress site using the powershell script. In this script the vuepress sidebar is generated automatically from the documentation directory's content, to the file `sidebar.json`.
 
 ```sh
-pwsh /build.ps1 /docs
+pwsh /build-sidebar.json.ps1 /docs
 ```
 
-Watch your generated website files in /docs/.vuepress/dist.
-
-Run the generated website on port 8080. Then open your website in a browser at <http://localhost:8080>.
+Preview the generated website on port 8080 via `vuepress dev`. Then open your website in a browser at <http://localhost:8080>.
 
 ```sh
 vuepress dev /docs
 ```
+
+Generate the website for real to the `dist` directory. 
+
+```sh
+vuepress build /docs
+```
+
+Watch your generated website files in /docs/.vuepress/dist.
+
+
 
 ## Vuepress notes
 

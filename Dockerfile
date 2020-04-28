@@ -13,6 +13,6 @@ RUN yum clean all -y && yum update -y && \
     yarn global add vuepress-plugin-mermaidjs && \
     chmod -R u=rwx,g=rwx,o=rwx /lost+found && \
     chmod -R u=rwx,g=rwx,o=rwx /usr/local/share/.config    
-COPY --chown=1200 ["copy-to-image/vuepress/","/"]
+COPY --chown=1200 ["copy-to-image/","/"]
 USER 1200
 CMD [ "sh"]

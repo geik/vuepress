@@ -5,4 +5,3 @@ _book
 **/_book
 node_modules
 dist
-docs/.vuepress
