@@ -24,7 +24,7 @@ jobs:
 
     - name: Build the image
       run: |-
-        docker build --tag geik/vuepress:latest .
+        docker build --tag geik/vuepress:latest --tag geik/vuepress:1.0.0 .
         
     - name: Publish the image
       run: |-
