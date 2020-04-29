@@ -22,11 +22,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Build the image
-      run: |-
-        docker build --tag geik/vuepress:latest --tag geik/vuepress:1.0.0 .
+    - name: Docker build has been moved to dockerhub
+      run: echo "Docker build has been moved to dockerhub"
+
+    # - name: Build the image
+    #   run: |-
+    #     docker build --tag geik/vuepress:latest --tag geik/vuepress:1.0.0 .
         
-    - name: Publish the image
-      run: |-
-        echo ${{ secrets.DOCKER_IO_TOKEN }} | docker login --username geik --password-stdin
-        docker push geik/vuepress
+    # - name: Publish the image
+    #   run: |-
+    #     echo ${{ secrets.DOCKER_IO_TOKEN }} | docker login --username geik --password-stdin
+    #     docker push geik/vuepress
