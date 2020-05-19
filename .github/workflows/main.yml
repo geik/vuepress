@@ -19,11 +19,8 @@ jobs:
 
     steps:
 
-#     - name: Checkout
-#       uses: actions/checkout@v2
-
-#     - name: Docker build has been moved to dockerhub
-#       run: echo "Docker build has been moved to dockerhub"
+    - name: Checkout
+      uses: actions/checkout@v2
 
     - name: Build the image
       run: |-
