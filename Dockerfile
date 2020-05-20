@@ -4,7 +4,7 @@ RUN yum clean all -y && yum update -y && \
     yum install -y nodejs && \
     curl https://packages.microsoft.com/config/rhel/7/prod.repo | tee /etc/yum.repos.d/microsoft.repo && \
     yum install -y powershell && \
-    yum install -y sshpass lftp && \
+    yum install --enablerepo=epel -y sshpass lftp && \
     yum autoremove -y && yum clean all -y && \
     npm install npm --global && \
     curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum.repos.d/yarn.repo && \
